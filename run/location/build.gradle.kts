@@ -33,6 +33,9 @@ android {
 }
 
 dependencies {
+    implementation(projects.run.domain)
+    implementation(projects.core.domain)
+
     implementation(libs.androidx.core.ktx)
 
     implementation(libs.androidx.compose.ui)
