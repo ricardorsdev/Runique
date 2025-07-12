@@ -3,6 +3,13 @@ plugins {
     id("org.jetbrains.kotlin.jvm")
 }
 
+kotlin {
+    jvmToolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
+    jvmToolchain(17)
+}
+
 java {
     sourceCompatibility = JavaVersion.VERSION_17
     targetCompatibility = JavaVersion.VERSION_17
